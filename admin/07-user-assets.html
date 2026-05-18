@@ -64,7 +64,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">活动配置</div>
         <div class="nav-sub">
-          <a class="nav-item " href="02-activity-config.html">活动基础配置</a><a class="nav-item " href="03-growth-rules.html">成长规则配置</a><a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
+          <a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
         </div>
       
         <div class="nav-group-title">兑换管理</div>
@@ -79,7 +79,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">用户与数据</div>
         <div class="nav-sub">
-          <a class="nav-item active" href="07-user-assets.html">用户资产与记录</a><a class="nav-item " href="08-friends.html">好友关系管理</a><div class="nav-item disabled">数据统计（PRD未展开）</div>
+          <a class="nav-item active" href="07-user-assets.html">用户资产与记录</a><a class="nav-item " href="09-asset-flows.html">能量/蕃茄流水记录</a><a class="nav-item " href="08-friends.html">好友关系管理</a>
         </div>
       
     </aside>
@@ -91,12 +91,12 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
     <div class="page-content">
       <div class="page-header">
         <div class="page-title">用户资产与记录</div>
-        <div class="page-desc">查询用户蕃茄余额、成长能量余额、植物阶段、任务完成、流水与兑换记录，并支持人工调整。</div>
+        <div class="page-desc">查询用户资产概览、任务记录、兑换记录和人工调整记录，并支持人工调整。</div>
       </div>
       
     <div class="card">
       <div class="filter-bar"><div class="filter-item"><span class="filter-label">WID</span><input></div><div class="filter-item"><span class="filter-label">OpenID</span><input></div><div class="filter-item"><span class="filter-label">昵称</span><input></div><div class="filter-item"><span class="filter-label">最近访问时间</span><input value="2026-05-01 至 2026-05-11"></div><button class="btn btn-primary">查询</button><button class="btn btn-default">重置</button></div>
-      <div class="action-bar"><div class="action-left"><button class="btn btn-primary">人工调整资产</button></div><div class="action-right"><button class="btn btn-default">导出</button></div></div>
+      <div class="action-bar"><div class="action-left"><button class="btn btn-primary">人工调整资产</button></div><div class="action-right"><a class="btn btn-default" href="09-asset-flows.html">查看流水记录</a><button class="btn btn-default">导出</button></div></div>
       <div class="table-wrap"><table><thead><tr><th>用户昵称</th><th>WID</th><th>OpenID</th><th>蕃茄余额</th><th>成长能量余额</th><th>植物阶段</th><th>当前经验</th><th>最近访问时间</th><th>操作</th></tr></thead><tbody>
         <tr><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>12</td><td>45</td><td>生长期</td><td>120</td><td>2026-05-11 10:31:20</td><td><button class="btn-link">详情</button></td></tr>
         <tr><td>陈嘉木</td><td>WID781233</td><td>openid_b2c9</td><td>3</td><td>6</td><td>幼苗期</td><td>40</td><td>2026-05-11 09:15:06</td><td><button class="btn-link">详情</button></td></tr>
@@ -108,13 +108,13 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       <div class="drawer-panel"><div class="drawer-header"><div class="drawer-title">用户详情：周若晴</div><div>×</div></div>
         <div class="drawer-body">
           <div class="desc-list"><div class="desc-label">WID</div><div class="desc-value">WID908216</div><div class="desc-label">OpenID</div><div class="desc-value">openid_a7f3</div><div class="desc-label">蕃茄余额</div><div class="desc-value">12</div><div class="desc-label">成长能量</div><div class="desc-value">45</div><div class="desc-label">植物阶段</div><div class="desc-value">生长期 / 120 经验</div></div>
-          <div class="card" style="margin-top:14px"><div class="card-title">Tabs：能量流水 / 蕃茄流水 / 任务记录 / 兑换记录 / 人工调整</div><div class="table-wrap"><table><thead><tr><th>时间</th><th>类型</th><th>变动</th><th>来源</th></tr></thead><tbody><tr><td>2026-05-11 10:21:03</td><td>能量</td><td>+5</td><td>签到</td></tr><tr><td>2026-05-11 10:25:44</td><td>蕃茄</td><td>-8</td><td>兑换商品</td></tr></tbody></table></div></div>
+          <div class="card" style="margin-top:14px"><div class="card-title">Tabs：任务记录 / 兑换记录 / 人工调整</div><div class="table-wrap"><table><thead><tr><th>时间</th><th>记录类型</th><th>说明</th><th>状态</th></tr></thead><tbody><tr><td>2026-05-11 10:21:03</td><td>任务记录</td><td>完成浏览茄皇指定页面</td><td><span class="tag tag-success">已完成</span></td></tr><tr><td>2026-05-11 10:25:44</td><td>兑换记录</td><td>兑换茄皇 20 元优惠券</td><td><span class="tag tag-success">已发放</span></td></tr></tbody></table></div></div>
         </div>
-        <div class="drawer-footer"><button class="btn btn-primary">人工调整资产</button></div>
+        <div class="drawer-footer"><a class="btn btn-default" href="09-asset-flows.html">查看流水记录</a><button class="btn btn-primary">人工调整资产</button></div>
       </div>
     </div>
     <div class="state-divider"><div class="state-divider-line"></div><div class="state-divider-label">点击「人工调整资产」后</div><div class="state-divider-line"></div></div>
-    <div class="modal-scene"><div class="modal-scene-label">人工调整弹窗静态平铺</div><div class="dialog"><div class="dialog-header"><div class="dialog-title">人工调整资产</div><div>×</div></div><div class="dialog-body"><div class="form-grid cols-1"><div class="form-item"><label class="form-label required">资产类型</label><select><option>蕃茄</option><option>成长能量</option></select></div><div class="form-item"><label class="form-label required">调整方式</label><select><option>增加</option><option>扣减</option></select></div><div class="form-item"><label class="form-label required">调整数量</label><input class="form-input" value="5"></div><div class="form-item"><label class="form-label required">自定义事件</label><input class="form-input" value="客服补偿"></div><div class="form-item"><label class="form-label required">调整原因</label><textarea>用户反馈发券失败后未及时感知，客服确认后补偿。</textarea></div></div></div><div class="dialog-footer"><button class="btn btn-default">取消</button><button class="btn btn-primary">确认调整</button></div></div></div>
+    <div class="modal-scene"><div class="modal-scene-label">人工调整弹窗静态平铺</div><div class="dialog"><div class="dialog-header"><div class="dialog-title">人工调整资产</div><div>×</div></div><div class="dialog-body"><div class="form-grid cols-1"><div class="form-item"><label class="form-label required">资产类型</label><select><option>蕃茄</option><option>成长能量</option></select></div><div class="form-item"><label class="form-label required">调整方式</label><select><option>增加</option><option>扣减</option></select></div><div class="form-item"><label class="form-label required">调整数量</label><input class="form-input" value="5"></div><div class="form-item"><label class="form-label required">自定义事件</label><input class="form-input" value="客服补偿"></div><div class="form-item"><label class="form-label required">调整原因</label><textarea>客服确认后补偿。</textarea></div></div></div><div class="dialog-footer"><button class="btn btn-default">取消</button><button class="btn btn-primary">确认调整</button></div></div></div>
   
     </div>
   </main>
@@ -152,7 +152,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
           <div class="req-group">
             <div class="req-group-title">关键规则</div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">后台可按自定义事件人工调整蕃茄或成长能量。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">完整能量和蕃茄流水统一进入能量/蕃茄流水记录页面查询。</span></div>
             
               <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">人工调整必须写入人工调整记录和对应资产流水。</span></div>
             

@@ -64,7 +64,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">活动配置</div>
         <div class="nav-sub">
-          <a class="nav-item " href="admin/02-activity-config.html">活动基础配置</a><a class="nav-item " href="admin/03-growth-rules.html">成长规则配置</a><a class="nav-item " href="admin/04-daily-tasks.html">每日任务配置</a>
+          <a class="nav-item " href="admin/04-daily-tasks.html">每日任务配置</a>
         </div>
       
         <div class="nav-group-title">兑换管理</div>
@@ -79,7 +79,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">用户与数据</div>
         <div class="nav-sub">
-          <a class="nav-item " href="admin/07-user-assets.html">用户资产与记录</a><a class="nav-item " href="admin/08-friends.html">好友关系管理</a><div class="nav-item disabled">数据统计（PRD未展开）</div>
+          <a class="nav-item " href="admin/07-user-assets.html">用户资产与记录</a><a class="nav-item " href="admin/09-asset-flows.html">能量/蕃茄流水记录</a><a class="nav-item " href="admin/08-friends.html">好友关系管理</a>
         </div>
       
     </aside>
@@ -95,15 +95,14 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       </div>
       
     <div class="landing-grid">
-      <a class="landing-card" href="admin/01-dashboard.html"><div class="landing-title">首页（仪表盘）</div><div class="landing-desc">活动状态、运营指标、趋势与配置风险。</div></a>
-      <a class="landing-card" href="admin/02-activity-config.html"><div class="landing-title">活动基础配置</div><div class="landing-desc">活动周期、素材、自动能量与每日使用上限。</div></a>
-      <a class="landing-card" href="admin/03-growth-rules.html"><div class="landing-title">成长规则配置</div><div class="landing-desc">植物阶段、图片、经验阈值与收获蕃茄。</div></a>
-      <a class="landing-card" href="admin/04-daily-tasks.html"><div class="landing-title">每日任务配置</div><div class="landing-desc">唯一任务与可新增浏览任务的配置和排序。</div></a>
+      <a class="landing-card" href="admin/01-dashboard.html"><div class="landing-title">首页（仪表盘）</div><div class="landing-desc">按日期汇总 PV、UV、活跃用户、产生能量和获取蕃茄。</div></a>
+      <a class="landing-card" href="admin/04-daily-tasks.html"><div class="landing-title">每日任务配置</div><div class="landing-desc">只维护浏览任务，默认任务不在后管配置。</div></a>
       <a class="landing-card" href="admin/05-exchange.html"><div class="landing-title">兑换商品管理</div><div class="landing-desc">商品库、SaaS 标识、库存状态、兑换记录和返还流水入口。</div></a>
       <a class="landing-card" href="admin/06-content.html"><div class="landing-title">公告/活动规则</div><div class="landing-desc">公告、活动规则、富文本与红点提醒。</div></a>
-      <a class="landing-card" href="admin/07-user-assets.html"><div class="landing-title">用户资产与记录</div><div class="landing-desc">用户资产、流水、任务、兑换和人工调整。</div></a>
-      <a class="landing-card" href="admin/08-friends.html"><div class="landing-title">好友关系管理</div><div class="landing-desc">分享绑定关系、好友状态、偷取与成长礼物记录。</div></a>
-      <div class="landing-card disabled-card"><div class="landing-title">数据统计</div><div class="landing-desc">当前仅在 PRD 侧栏树出现，暂无独立页面文档，未生成页面。</div></div>
+      <a class="landing-card" href="admin/07-user-assets.html"><div class="landing-title">用户资产与记录</div><div class="landing-desc">用户资产概览、任务记录、兑换记录和人工调整。</div></a>
+      <a class="landing-card" href="admin/09-asset-flows.html"><div class="landing-title">能量/蕃茄流水记录</div><div class="landing-desc">统一查询全用户能量和蕃茄流水，支持筛选及导出。</div></a>
+      <a class="landing-card" href="admin/08-friends.html"><div class="landing-title">好友关系管理</div><div class="landing-desc">分享绑定关系与来源查询，列表保持轻量化。</div></a>
+      <div class="landing-card disabled-card"><div class="landing-title">默认规则说明</div><div class="landing-desc">基础信息、植物阶段规则和系统任务按默认数据初始化；后端保留后续扩展。</div></div>
     </div>
   
     </div>
@@ -129,9 +128,9 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
           <div class="req-group">
             <div class="req-group-title">生成范围</div>
             
-              <div class="req-item"><span class="req-field">PRD目录</span><span class="req-desc">生成 8 个后管页面：仪表盘、活动基础配置、成长规则配置、每日任务配置、兑换商品管理、内容管理、用户资产与记录、好友关系管理。</span></div>
+              <div class="req-item"><span class="req-field">PRD目录</span><span class="req-desc">生成 7 个后管页面：仪表盘、每日任务配置、兑换商品管理、内容管理、用户资产与记录、能量/蕃茄流水记录、好友关系管理。</span></div>
             
-              <div class="req-item"><span class="req-field">PRD目录</span><span class="req-desc">兑换记录按兑换商品管理中的页内记录区呈现；数据统计仅在侧栏标注，当前 PRD 未展开独立页面。</span></div>
+              <div class="req-item"><span class="req-field">PRD目录</span><span class="req-desc">已收敛为当前后管页面范围；未开放的默认规则数据保留表结构扩展能力。</span></div>
             
           </div>
         

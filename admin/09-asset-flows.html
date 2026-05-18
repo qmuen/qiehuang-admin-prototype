@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:,">
-  <title>活动基础配置</title>
+  <title>能量/蕃茄流水记录</title>
   <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:14px;color:#333;background:#f5f5f5;display:flex;height:100vh;overflow:hidden}
@@ -64,7 +64,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">活动配置</div>
         <div class="nav-sub">
-          <a class="nav-item active" href="02-activity-config.html">活动基础配置</a><a class="nav-item " href="03-growth-rules.html">成长规则配置</a><a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
+          <a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
         </div>
       
         <div class="nav-group-title">兑换管理</div>
@@ -79,44 +79,31 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">用户与数据</div>
         <div class="nav-sub">
-          <a class="nav-item " href="07-user-assets.html">用户资产与记录</a><a class="nav-item " href="08-friends.html">好友关系管理</a><div class="nav-item disabled">数据统计（PRD未展开）</div>
+          <a class="nav-item " href="07-user-assets.html">用户资产与记录</a><a class="nav-item active" href="09-asset-flows.html">能量/蕃茄流水记录</a><a class="nav-item " href="08-friends.html">好友关系管理</a>
         </div>
       
     </aside>
   <main class="main" id="main">
     <header class="header">
-      <div class="breadcrumb"><span>茄皇的家</span><span>/</span><span>活动配置</span><span>/</span><span>活动基础配置</span></div>
+      <div class="breadcrumb"><span>茄皇的家</span><span>/</span><span>用户与数据</span><span>/</span><span>能量/蕃茄流水记录</span></div>
       <div class="header-right">运营人员 · 2026-05-11</div>
     </header>
     <div class="page-content">
       <div class="page-header">
-        <div class="page-title">活动基础配置</div>
-        <div class="page-desc">维护活动开关、周期、加载页、分享素材、每日自动能量等全局规则。</div>
+        <div class="page-title">能量/蕃茄流水记录</div>
+        <div class="page-desc">统一查询所有用户产生的成长能量流水和蕃茄流水，支持筛选和导出。</div>
       </div>
       
     <div class="card">
-      <div class="action-bar"><div class="action-left"><span>当前发布版本：2026-05-09 18:30</span></div><div class="action-right"><button class="btn btn-default">保存</button><button class="btn btn-primary">发布</button></div></div>
-      <div style="padding:18px">
-        <div class="form-grid">
-          <div class="form-item"><label class="form-label required">活动名称</label><input class="form-input" value="茄皇的家五期活动"></div>
-          <div class="form-item"><label class="form-label required">活动状态</label><span><span class="toggle on"></span> 启用</span></div>
-          <div class="form-item full"><label class="form-label required">活动时间</label><input class="form-input" value="2026-05-01 00:00:00 至 2026-06-30 23:59:59"></div>
-          <div class="form-item"><label class="form-label required">加载页图片</label><div class="upload">上传<br><span>320x560</span></div><div class="form-hint">jpg/png，建议 320x560</div></div>
-          <div class="form-item"><label class="form-label required">分享运营图片</label><div class="upload">上传<br><span>微信分享</span></div><div class="form-hint">用于分享活动弹窗</div></div>
-          <div class="form-item"><label class="form-label required">每日自动能量</label><input type="number" class="form-input" value="10"></div>
-          <div class="form-item"><label class="form-label required">连续未访问暂停天数</label><input type="number" class="form-input" value="7"></div>
-          <div class="form-item"><label class="form-label required">今日使用能量上限</label><input type="number" class="form-input" value="80"></div>
-        </div>
-      </div>
-    </div>
-    <div class="state-divider"><div class="state-divider-line"></div><div class="state-divider-label">点击「预览图片」后</div><div class="state-divider-line"></div></div>
-    <div class="modal-scene">
-      <div class="modal-scene-label">图片预览 Modal 静态平铺</div>
-      <div class="dialog">
-        <div class="dialog-header"><div class="dialog-title">预览图片</div><div>×</div></div>
-        <div class="dialog-body"><div style="height:220px;background:#f0f0f0;border:1px solid #e8e8e8;display:flex;align-items:center;justify-content:center;color:#999">加载页图片预览</div></div>
-        <div class="dialog-footer"><button class="btn btn-default">关闭</button></div>
-      </div>
+      <div class="filter-bar"><div class="filter-item"><span class="filter-label">WID</span><input></div><div class="filter-item"><span class="filter-label">OpenID</span><input></div><div class="filter-item"><span class="filter-label">昵称</span><input></div><div class="filter-item"><span class="filter-label">资产类型</span><select><option>全部</option><option>成长能量</option><option>蕃茄</option></select></div><div class="filter-item"><span class="filter-label">流水来源</span><select><option>全部</option><option>每日自动能量</option><option>浏览任务</option><option>好友能量</option><option>植物收获</option><option>兑换失败返还</option><option>人工调整</option></select></div><div class="filter-item"><span class="filter-label">日期范围</span><input value="2026-05-05 至 2026-05-11"></div><button class="btn btn-primary">查询</button><button class="btn btn-default">重置</button></div>
+      <div class="action-bar"><div class="action-left"></div><div class="action-right"><button class="btn btn-default">导出</button></div></div>
+      <div class="table-wrap"><table><thead><tr><th>发生时间</th><th>用户昵称</th><th>WID</th><th>OpenID</th><th>资产类型</th><th>流水来源</th><th>变动值</th><th>变动前</th><th>变动后</th><th>关联对象</th></tr></thead><tbody>
+        <tr><td>2026-05-11 10:21:03</td><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>成长能量</td><td>浏览任务</td><td>+5</td><td>40</td><td>45</td><td>浏览茄皇指定页面</td></tr>
+        <tr><td>2026-05-11 10:25:44</td><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>蕃茄</td><td>兑换商品</td><td>-8</td><td>20</td><td>12</td><td>EX20260511001</td></tr>
+        <tr><td>2026-05-11 09:18:06</td><td>陈嘉木</td><td>WID781233</td><td>openid_b2c9</td><td>蕃茄</td><td>兑换失败返还</td><td>+12</td><td>3</td><td>15</td><td>EX20260511002</td></tr>
+        <tr><td>2026-05-10 18:44:21</td><td>林一诺</td><td>WID561028</td><td>openid_d8m1</td><td>蕃茄</td><td>植物收获</td><td>+1</td><td>23</td><td>24</td><td>植物第 3 轮</td></tr>
+        <tr><td>2026-05-10 08:20:01</td><td>许知夏</td><td>WID337812</td><td>openid_m2r7</td><td>成长能量</td><td>好友能量</td><td>-5</td><td>32</td><td>27</td><td>FR20260510018</td></tr>
+      </tbody></table></div><div class="pagination"><span>共 128 条</span><span class="page-btn active">1</span><span class="page-btn">2</span><span class="page-btn">3</span><span class="page-btn">下一页</span></div>
     </div>
   
     </div>
@@ -125,7 +112,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
     <div class="req-trigger" onclick="toggleReq(true)">需求说明</div>
     <aside class="req-panel" id="reqPanel">
       <div class="req-panel-header">
-        <div class="req-panel-title">活动基础配置</div>
+        <div class="req-panel-title">能量/蕃茄流水记录</div>
         <div class="req-panel-close" onclick="toggleReq(false)">×</div>
       </div>
       <div class="req-panel-body">
@@ -137,25 +124,23 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
             
               <div class="req-item"><span class="req-field">技能约束</span><span class="req-desc">纯 HTML/CSS/内联 JS；朴素线框；不引入外部框架或图标库。</span></div>
             
-              <div class="req-item"><span class="req-field">PRD页面</span><span class="req-desc">admin/02-活动基础配置.md</span></div>
+              <div class="req-item"><span class="req-field">PRD页面</span><span class="req-desc">admin/09-能量蕃茄流水记录.md</span></div>
             
           </div>
         
           <div class="req-group">
             <div class="req-group-title">已渲染状态白名单</div>
             
-              <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">默认态：PRD「页面状态/正常」描述展示表单。</span></div>
-            
-              <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">图片预览 Modal：PRD「跳转逻辑/预览图片」明确弹出图片预览 Modal。</span></div>
+              <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">默认态：PRD「页面状态/正常」描述展示流水列表。</span></div>
             
           </div>
         
           <div class="req-group">
             <div class="req-group-title">关键规则</div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">活动基础配置不包含成长能量余额上限设置。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">支持按 WID、OpenID、昵称、资产类型、流水来源、日期范围筛选。</span></div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">活动周期结束后禁止继续获取能量、收获和兑换。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">导出使用当前筛选条件。</span></div>
             
           </div>
         

@@ -64,7 +64,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">活动配置</div>
         <div class="nav-sub">
-          <a class="nav-item " href="02-activity-config.html">活动基础配置</a><a class="nav-item " href="03-growth-rules.html">成长规则配置</a><a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
+          <a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
         </div>
       
         <div class="nav-group-title">兑换管理</div>
@@ -79,7 +79,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">用户与数据</div>
         <div class="nav-sub">
-          <a class="nav-item " href="07-user-assets.html">用户资产与记录</a><a class="nav-item active" href="08-friends.html">好友关系管理</a><div class="nav-item disabled">数据统计（PRD未展开）</div>
+          <a class="nav-item " href="07-user-assets.html">用户资产与记录</a><a class="nav-item " href="09-asset-flows.html">能量/蕃茄流水记录</a><a class="nav-item active" href="08-friends.html">好友关系管理</a>
         </div>
       
     </aside>
@@ -91,24 +91,24 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
     <div class="page-content">
       <div class="page-header">
         <div class="page-title">好友关系管理</div>
-        <div class="page-desc">查询用户分享邀请形成的好友绑定关系、好友状态、每日偷取记录和成长礼物记录。</div>
+        <div class="page-desc">查询用户分享邀请形成的好友绑定关系和分享来源。</div>
       </div>
       
     <div class="card">
-      <div class="filter-bar"><div class="filter-item"><span class="filter-label">邀请人 WID</span><input></div><div class="filter-item"><span class="filter-label">好友 OpenID</span><input></div><div class="filter-item"><span class="filter-label">好友昵称</span><input></div><div class="filter-item"><span class="filter-label">好友状态</span><select><option>全部</option><option>种植中</option><option>可收取</option><option>已收取</option><option>不可收取</option></select></div><button class="btn btn-primary">查询</button><button class="btn btn-default">重置</button></div>
-      <div class="action-bar"><div class="action-left"><span class="note">好友关系建立后不可解绑，本页仅查询和排查。</span></div><div class="action-right"><button class="btn btn-default">导出</button></div></div>
-      <div class="table-wrap"><table><thead><tr><th>邀请人昵称</th><th>邀请人 WID</th><th>好友昵称</th><th>好友头像</th><th>好友 OpenID</th><th>好友状态</th><th>绑定时间</th><th>今日偷取状态</th><th>操作</th></tr></thead><tbody>
-        <tr><td>周若晴</td><td>WID908216</td><td>陈嘉木</td><td><div class="preview">头像</div></td><td>openid_b2c9</td><td><span class="tag tag-success">可收取</span></td><td>2026-05-08 14:12:36</td><td>未偷取</td><td><button class="btn-link">详情</button></td></tr>
-        <tr><td>周若晴</td><td>WID908216</td><td>不愿意透露姓名的好友</td><td><div class="preview">默认</div></td><td>openid_k6p1</td><td><span class="tag tag-default">种植中</span></td><td>2026-05-09 18:42:09</td><td>-</td><td><button class="btn-link">详情</button></td></tr>
-        <tr><td>林一诺</td><td>WID561028</td><td>许知夏</td><td><div class="preview">头像</div></td><td>openid_m2r7</td><td><span class="tag tag-warning">已收取</span></td><td>2026-05-10 08:20:01</td><td>已偷取</td><td><button class="btn-link">详情</button></td></tr>
+      <div class="filter-bar"><div class="filter-item"><span class="filter-label">邀请人 WID</span><input></div><div class="filter-item"><span class="filter-label">好友 OpenID</span><input></div><div class="filter-item"><span class="filter-label">好友昵称</span><input></div><div class="filter-item"><span class="filter-label">绑定时间</span><input value="2026-05-01 至 2026-05-11"></div><button class="btn btn-primary">查询</button><button class="btn btn-default">重置</button></div>
+      <div class="action-bar"><div class="action-left"><span class="note">好友关系建立后不可解绑，本页仅查询和排查绑定关系。</span></div><div class="action-right"><button class="btn btn-default">导出</button></div></div>
+      <div class="table-wrap"><table><thead><tr><th>邀请人昵称</th><th>邀请人 WID</th><th>好友昵称</th><th>好友头像</th><th>好友 OpenID</th><th>绑定时间</th><th>来源分享ID</th><th>操作</th></tr></thead><tbody>
+        <tr><td>周若晴</td><td>WID908216</td><td>陈嘉木</td><td><div class="preview">头像</div></td><td>openid_b2c9</td><td>2026-05-08 14:12:36</td><td>share_20260508_009</td><td><button class="btn-link">详情</button></td></tr>
+        <tr><td>周若晴</td><td>WID908216</td><td>不愿意透露姓名的好友</td><td><div class="preview">默认</div></td><td>openid_k6p1</td><td>2026-05-09 18:42:09</td><td>share_20260509_023</td><td><button class="btn-link">详情</button></td></tr>
+        <tr><td>林一诺</td><td>WID561028</td><td>许知夏</td><td><div class="preview">头像</div></td><td>openid_m2r7</td><td>2026-05-10 08:20:01</td><td>share_20260510_031</td><td><button class="btn-link">详情</button></td></tr>
       </tbody></table></div><div class="pagination"><span>共 128 条</span><span class="page-btn active">1</span><span class="page-btn">2</span><span class="page-btn">3</span><span class="page-btn">下一页</span></div>
     </div>
     <div class="state-divider"><div class="state-divider-line"></div><div class="state-divider-label">点击「详情」后</div><div class="state-divider-line"></div></div>
     <div class="drawer-scene"><div class="drawer-scene-bg"></div><div class="drawer-scene-label">关系详情 Drawer 静态平铺</div>
       <div class="drawer-panel"><div class="drawer-header"><div class="drawer-title">关系详情</div><div>×</div></div>
         <div class="drawer-body">
-          <div class="desc-list"><div class="desc-label">邀请人</div><div class="desc-value">周若晴 / WID908216</div><div class="desc-label">好友</div><div class="desc-value">陈嘉木 / openid_b2c9</div><div class="desc-label">绑定时间</div><div class="desc-value">2026-05-08 14:12:36</div><div class="desc-label">分享来源</div><div class="desc-value">分享活动弹窗 share_20260508_009</div><div class="desc-label">当前状态</div><div class="desc-value"><span class="tag tag-success">可收取</span></div></div>
-          <div class="card" style="margin-top:14px"><div class="card-title">偷取/成长礼物记录</div><div class="table-wrap"><table><thead><tr><th>日期</th><th>类型</th><th>数量</th><th>状态</th></tr></thead><tbody><tr><td>2026-05-10</td><td>好友能量偷取</td><td>5</td><td>已完成</td></tr><tr><td>2026-05-09</td><td>成长礼物</td><td>1 蕃茄</td><td>首次收获触发</td></tr></tbody></table></div></div>
+          <div class="desc-list"><div class="desc-label">邀请人</div><div class="desc-value">周若晴 / WID908216</div><div class="desc-label">好友</div><div class="desc-value">陈嘉木 / openid_b2c9</div><div class="desc-label">绑定时间</div><div class="desc-value">2026-05-08 14:12:36</div><div class="desc-label">分享来源</div><div class="desc-value">分享活动弹窗 share_20260508_009</div></div>
+          <div class="card" style="margin-top:14px"><div class="card-title">成长礼物记录</div><div class="table-wrap"><table><thead><tr><th>日期</th><th>类型</th><th>数量</th><th>状态</th></tr></thead><tbody><tr><td>2026-05-09</td><td>成长礼物</td><td>1 蕃茄</td><td>首次收获触发</td></tr></tbody></table></div></div>
         </div>
       </div>
     </div>
@@ -147,9 +147,9 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
           <div class="req-group">
             <div class="req-group-title">关键规则</div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">好友关系建立后不可解绑，后台仅提供查询。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">本页仅展示绑定关系、来源和成长礼物记录。</span></div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">好友状态按实时规则计算；偷取和成长礼物记录落库。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">能量相关记录统一在能量/蕃茄流水记录中查询。</span></div>
             
           </div>
         

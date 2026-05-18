@@ -64,7 +64,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">活动配置</div>
         <div class="nav-sub">
-          <a class="nav-item " href="02-activity-config.html">活动基础配置</a><a class="nav-item " href="03-growth-rules.html">成长规则配置</a><a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
+          <a class="nav-item " href="04-daily-tasks.html">每日任务配置</a>
         </div>
       
         <div class="nav-group-title">兑换管理</div>
@@ -79,7 +79,7 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       
         <div class="nav-group-title">用户与数据</div>
         <div class="nav-sub">
-          <a class="nav-item " href="07-user-assets.html">用户资产与记录</a><a class="nav-item " href="08-friends.html">好友关系管理</a><div class="nav-item disabled">数据统计（PRD未展开）</div>
+          <a class="nav-item " href="07-user-assets.html">用户资产与记录</a><a class="nav-item " href="09-asset-flows.html">能量/蕃茄流水记录</a><a class="nav-item " href="08-friends.html">好友关系管理</a>
         </div>
       
     </aside>
@@ -91,37 +91,22 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
     <div class="page-content">
       <div class="page-header">
         <div class="page-title">首页（仪表盘）</div>
-        <div class="page-desc">集中查看活动运行状态、关键数据指标和配置风险。仪表盘数据由定时任务聚合生成。</div>
+        <div class="page-desc">按日期查看活动运行统计数据，数据由定时任务聚合生成。</div>
       </div>
       
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-label">活动状态</div><div class="stat-value">进行中</div><div class="stat-sub">2026-05-01 至 2026-06-30</div></div>
-      <div class="stat-card"><div class="stat-label">参与用户</div><div class="stat-value">12,486</div><div class="stat-sub">累计进入活动</div></div>
-      <div class="stat-card"><div class="stat-label">今日新增能量</div><div class="stat-value">38,250</div><div class="stat-sub">定时聚合数据</div></div>
-      <div class="stat-card"><div class="stat-label">今日兑换数</div><div class="stat-value">126</div><div class="stat-sub">活动结束后禁止新兑换</div></div>
-    </div>
     <div class="card">
       <div class="filter-bar">
-        <div class="filter-item"><span class="filter-label">统计周期</span><select><option>近7日</option><option>近30日</option><option>自定义</option></select></div>
-        <div class="filter-item"><span class="filter-label">指标类型</span><select><option>访问/任务/收获/兑换</option></select></div>
+        <div class="filter-item"><span class="filter-label">日期范围</span><input value="2026-05-05 至 2026-05-11"></div>
         <button class="btn btn-primary">查询</button><button class="btn btn-default">刷新数据</button><button class="btn btn-default">导出数据</button>
       </div>
-      <div class="card-title">趋势图：访问 / 任务 / 收获 / 兑换</div>
-      <div class="table-wrap"><table><thead><tr><th>日期</th><th>访问</th><th>任务完成</th><th>收获蕃茄</th><th>兑换</th><th>趋势</th></tr></thead><tbody>
-        <tr><td>2026-05-05</td><td>2,180</td><td>4,326</td><td>612</td><td>88</td><td><div class="mini-bar"><span style="width:66%"></span></div></td></tr>
-        <tr><td>2026-05-06</td><td>2,356</td><td>4,588</td><td>675</td><td>103</td><td><div class="mini-bar"><span style="width:72%"></span></div></td></tr>
-        <tr><td>2026-05-07</td><td>2,782</td><td>5,124</td><td>701</td><td>116</td><td><div class="mini-bar"><span style="width:81%"></span></div></td></tr>
-        <tr><td>2026-05-08</td><td>3,006</td><td>5,705</td><td>752</td><td>119</td><td><div class="mini-bar"><span style="width:88%"></span></div></td></tr>
-        <tr><td>2026-05-09</td><td>3,214</td><td>5,906</td><td>809</td><td>126</td><td><div class="mini-bar"><span style="width:94%"></span></div></td></tr>
-      </tbody></table></div>
-    </div>
-    <div class="card">
-      <div class="card-title">配置风险提醒</div>
-      <div class="table-wrap"><table><thead><tr><th>风险项</th><th>影响</th><th>状态</th><th>操作</th></tr></thead><tbody>
-        <tr><td>成长规则未发布</td><td>用户端继续读取上一版规则</td><td><span class="tag tag-warning">待处理</span></td><td><a class="btn-link" href="03-growth-rules.html">查看详情</a></td></tr>
-        <tr><td>公告未维护</td><td>用户端隐藏公告入口</td><td><span class="tag tag-warning">待处理</span></td><td><a class="btn-link" href="06-content.html">查看详情</a></td></tr>
-        <tr><td>兑换商品未上架</td><td>用户无法兑换商品</td><td><span class="tag tag-default">已确认</span></td><td><a class="btn-link" href="05-exchange.html">查看详情</a></td></tr>
-      </tbody></table></div>
+      <div class="table-wrap"><table><thead><tr><th>日期</th><th>PV</th><th>UV</th><th>活跃用户</th><th>产生能量</th><th>获取蕃茄</th></tr></thead><tbody>
+        <tr><td>2026-05-11</td><td>3,420</td><td>2,136</td><td>1,886</td><td>38,250</td><td>812</td></tr>
+        <tr><td>2026-05-10</td><td>3,214</td><td>2,008</td><td>1,742</td><td>35,906</td><td>776</td></tr>
+        <tr><td>2026-05-09</td><td>3,006</td><td>1,932</td><td>1,685</td><td>33,705</td><td>752</td></tr>
+        <tr><td>2026-05-08</td><td>2,782</td><td>1,746</td><td>1,520</td><td>31,124</td><td>701</td></tr>
+        <tr><td>2026-05-07</td><td>2,356</td><td>1,502</td><td>1,318</td><td>28,588</td><td>675</td></tr>
+        <tr><td>2026-05-06</td><td>2,180</td><td>1,382</td><td>1,190</td><td>24,326</td><td>612</td></tr>
+      </tbody></table></div><div class="pagination"><span>共 128 条</span><span class="page-btn active">1</span><span class="page-btn">2</span><span class="page-btn">3</span><span class="page-btn">下一页</span></div>
     </div>
   
     </div>
@@ -149,16 +134,16 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
           <div class="req-group">
             <div class="req-group-title">已渲染状态白名单</div>
             
-              <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">默认态：PRD「页面状态/正常」描述展示指标、图表、风险提醒。</span></div>
+              <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">默认态：PRD「页面状态/正常」描述展示统计列表。</span></div>
             
           </div>
         
           <div class="req-group">
             <div class="req-group-title">关键规则</div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">首页仅保留活动数据与配置风险，不展示第三方接口异常面板，也不提供日志跳转入口。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">首页只呈现按日汇总统计列表。</span></div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">点击刷新只重新请求聚合结果，不直接触发全量实时计算。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">统计字段仅包含日期、PV、UV、活跃用户、产生能量、获取蕃茄。</span></div>
             
           </div>
         
