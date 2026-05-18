@@ -95,14 +95,14 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
       </div>
       
     <div class="card">
-      <div class="filter-bar"><div class="filter-item"><span class="filter-label">WID</span><input></div><div class="filter-item"><span class="filter-label">OpenID</span><input></div><div class="filter-item"><span class="filter-label">昵称</span><input></div><div class="filter-item"><span class="filter-label">资产类型</span><select><option>全部</option><option>成长能量</option><option>蕃茄</option></select></div><div class="filter-item"><span class="filter-label">流水来源</span><select><option>全部</option><option>每日自动能量</option><option>浏览任务</option><option>好友能量</option><option>植物收获</option><option>兑换失败返还</option><option>人工调整</option></select></div><div class="filter-item"><span class="filter-label">日期范围</span><input value="2026-05-05 至 2026-05-11"></div><button class="btn btn-primary">查询</button><button class="btn btn-default">重置</button></div>
+      <div class="filter-bar"><div class="filter-item"><span class="filter-label">WID</span><input></div><div class="filter-item"><span class="filter-label">OpenID</span><input></div><div class="filter-item"><span class="filter-label">昵称</span><input></div><div class="filter-item"><span class="filter-label">资产类型</span><select><option>全部</option><option>成长能量</option><option>蕃茄</option></select></div><div class="filter-item"><span class="filter-label">记录类型</span><select><option>全部</option><option>系统发放</option><option>任务奖励</option><option>好友互动</option><option>能量使用</option><option>植物收获</option><option>商品兑换</option><option>兑换返还</option><option>人工调整</option></select></div><div class="filter-item"><span class="filter-label">流水来源</span><select><option>全部</option><option>每日自动能量</option><option>浏览任务</option><option>好友能量偷取</option><option>好友能量被偷取</option><option>使用成长能量</option><option>植物收获</option><option>兑换商品</option><option>兑换失败返还</option><option>人工调整自定义事件</option></select></div><div class="filter-item"><span class="filter-label">日期范围</span><input value="2026-05-05 至 2026-05-11"></div><button class="btn btn-primary">查询</button><button class="btn btn-default">重置</button></div>
       <div class="action-bar"><div class="action-left"></div><div class="action-right"><button class="btn btn-default">导出</button></div></div>
-      <div class="table-wrap"><table><thead><tr><th>发生时间</th><th>用户昵称</th><th>WID</th><th>OpenID</th><th>资产类型</th><th>流水来源</th><th>变动值</th><th>变动前</th><th>变动后</th><th>关联对象</th></tr></thead><tbody>
-        <tr><td>2026-05-11 10:21:03</td><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>成长能量</td><td>浏览任务</td><td>+5</td><td>40</td><td>45</td><td>浏览茄皇指定页面</td></tr>
-        <tr><td>2026-05-11 10:25:44</td><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>蕃茄</td><td>兑换商品</td><td>-8</td><td>20</td><td>12</td><td>EX20260511001</td></tr>
-        <tr><td>2026-05-11 09:18:06</td><td>陈嘉木</td><td>WID781233</td><td>openid_b2c9</td><td>蕃茄</td><td>兑换失败返还</td><td>+12</td><td>3</td><td>15</td><td>EX20260511002</td></tr>
-        <tr><td>2026-05-10 18:44:21</td><td>林一诺</td><td>WID561028</td><td>openid_d8m1</td><td>蕃茄</td><td>植物收获</td><td>+1</td><td>23</td><td>24</td><td>植物第 3 轮</td></tr>
-        <tr><td>2026-05-10 08:20:01</td><td>许知夏</td><td>WID337812</td><td>openid_m2r7</td><td>成长能量</td><td>好友能量</td><td>-5</td><td>32</td><td>27</td><td>FR20260510018</td></tr>
+      <div class="table-wrap"><table><thead><tr><th>发生时间</th><th>用户昵称</th><th>WID</th><th>OpenID</th><th>资产类型</th><th>记录类型</th><th>流水来源</th><th>变动值</th><th>变动前</th><th>变动后</th><th>说明</th></tr></thead><tbody>
+        <tr><td>2026-05-11 10:21:03</td><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>成长能量</td><td>任务奖励</td><td>浏览任务</td><td>+5</td><td>40</td><td>45</td><td>浏览茄皇指定页面</td></tr>
+        <tr><td>2026-05-11 10:25:44</td><td>周若晴</td><td>WID908216</td><td>openid_a7f3</td><td>蕃茄</td><td>商品兑换</td><td>兑换商品</td><td>-8</td><td>20</td><td>12</td><td>茄皇 20 元优惠券</td></tr>
+        <tr><td>2026-05-11 09:18:06</td><td>陈嘉木</td><td>WID781233</td><td>openid_b2c9</td><td>蕃茄</td><td>兑换返还</td><td>兑换失败返还</td><td>+12</td><td>3</td><td>15</td><td>SaaS 发券失败自动返还</td></tr>
+        <tr><td>2026-05-10 18:44:21</td><td>林一诺</td><td>WID561028</td><td>openid_d8m1</td><td>蕃茄</td><td>植物收获</td><td>植物收获</td><td>+1</td><td>23</td><td>24</td><td>当前用户植物收获</td></tr>
+        <tr><td>2026-05-10 08:20:01</td><td>许知夏</td><td>WID337812</td><td>openid_m2r7</td><td>成长能量</td><td>好友互动</td><td>好友能量被偷取</td><td>-5</td><td>32</td><td>27</td><td>好友偷取成长能量</td></tr>
       </tbody></table></div><div class="pagination"><span>共 128 条</span><span class="page-btn active">1</span><span class="page-btn">2</span><span class="page-btn">3</span><span class="page-btn">下一页</span></div>
     </div>
   
@@ -138,7 +138,9 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
           <div class="req-group">
             <div class="req-group-title">关键规则</div>
             
-              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">支持按 WID、OpenID、昵称、资产类型、流水来源、日期范围筛选。</span></div>
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">支持按 WID、OpenID、昵称、资产类型、记录类型、流水来源、日期范围筛选。</span></div>
+            
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">列表字段收敛为记录类型、流水来源和说明，排查信息统一放在说明字段。</span></div>
             
               <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">导出使用当前筛选条件。</span></div>
             

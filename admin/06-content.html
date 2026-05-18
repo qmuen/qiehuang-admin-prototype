@@ -97,8 +97,8 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
     <div class="card">
       <div class="action-bar"><div class="action-left"><span class="note">公告和活动规则均为固定内容项，只能编辑当前内容。</span></div></div>
       <div class="table-wrap"><table><thead><tr><th>内容项</th><th>标题</th><th>状态</th><th>更新时间</th><th>小程序入口</th><th>操作</th></tr></thead><tbody>
-        <tr><td>公告</td><td>五一活动公告</td><td><span class="tag tag-success">启用</span></td><td>2026-05-10 17:22:00</td><td><span class="tag tag-success">显示</span></td><td class="ops"><button class="btn-link">编辑</button><span class="sep">|</span><button class="btn-link">预览</button><span class="sep">|</span><button class="btn-link danger">禁用</button></td></tr>
-        <tr><td>活动规则</td><td>茄皇的家活动规则</td><td><span class="tag tag-success">启用</span></td><td>2026-05-09 19:10:00</td><td><span class="tag tag-success">显示</span></td><td class="ops"><button class="btn-link">编辑</button><span class="sep">|</span><button class="btn-link">预览</button><span class="sep">|</span><button class="btn-link danger">禁用</button></td></tr>
+        <tr><td>公告</td><td>五一活动公告</td><td><span class="tag tag-success">启用</span></td><td>2026-05-10 17:22:00</td><td><span class="tag tag-success">显示</span></td><td class="ops"><button class="btn-link">编辑</button><span class="sep">|</span><button class="btn-link danger">禁用</button></td></tr>
+        <tr><td>活动规则</td><td>茄皇的家活动规则</td><td><span class="tag tag-success">启用</span></td><td>2026-05-09 19:10:00</td><td><span class="tag tag-success">显示</span></td><td class="ops"><button class="btn-link">编辑</button><span class="sep">|</span><button class="btn-link danger">禁用</button></td></tr>
       </tbody></table></div>
     </div>
     <div class="state-divider"><div class="state-divider-line"></div><div class="state-divider-label">点击「编辑」后</div><div class="state-divider-line"></div></div>
@@ -113,8 +113,6 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
         <div class="drawer-footer"><button class="btn btn-default">取消</button><button class="btn btn-default">保存</button><button class="btn btn-primary">发布</button></div>
       </div>
     </div>
-    <div class="state-divider"><div class="state-divider-line"></div><div class="state-divider-label">点击「预览」后</div><div class="state-divider-line"></div></div>
-    <div class="modal-scene"><div class="modal-scene-label">内容预览 Modal 静态平铺</div><div class="dialog"><div class="dialog-header"><div class="dialog-title">五一活动公告</div><div>×</div></div><div class="dialog-body"><p style="line-height:1.8;color:#555">欢迎参与茄皇的家活动。完成每日任务获取成长能量，推动植物成长并收获蕃茄。</p></div><div class="dialog-footer"><button class="btn btn-default">关闭</button></div></div></div>
   
     </div>
   </main>
@@ -145,14 +143,14 @@ input:focus,select:focus,textarea:focus{border-color:#1677ff}
             
               <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">内容编辑 Drawer：PRD「编辑」按钮明确打开编辑 Drawer。</span></div>
             
-              <div class="req-item"><span class="req-field">PRD证据</span><span class="req-desc">内容预览 Modal：PRD「预览」按钮明确打开预览 Modal。</span></div>
-            
           </div>
         
           <div class="req-group">
             <div class="req-group-title">关键规则</div>
             
               <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">公告和活动规则都具有唯一性，页面不提供新增入口。</span></div>
+            
+              <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">只保留编辑、禁用/启用操作，不提供预览操作。</span></div>
             
               <div class="req-item"><span class="req-field">PRD规则</span><span class="req-desc">页面不展示红点开关和红点字段；公告红点按公告更新时间和用户已读状态自动判断，活动规则无红点。</span></div>
             
